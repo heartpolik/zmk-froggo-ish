@@ -45,7 +45,7 @@
 
         default_layer {
             bindings = <
-           &kp C_VOLUME_DOWN  &kp C_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp C_VOLUME_UP
+           &kp C_VOLUME_DOWN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_UP
            &none              &none           &kp UP_ARROW      &none       &none
            &none              &kp LEFT_ARROW  &kp DOWN          &kp RIGHT   &none
 &kp SPACE  &kp LEFT_ALT                       &kp TAB                       &kp LEFT_GUI     &kp ENTER
@@ -55,8 +55,8 @@
         gaming_layer {
             bindings = <
          &kp F16           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
-         &kp F15           &kp Q         &kp W         &kp E         &kp R
-         &kp F14           &kp A         &kp S         &kp D         &kp F
+         &kp F19           &kp Q         &kp W         &kp E         &kp R
+         &kp F20           &kp A         &kp S         &kp D         &kp F
 &kp F18  &kp LEFT_CONTROL                &kp F17                     &kp SPACE     &kp SPACE
             >;
         };
