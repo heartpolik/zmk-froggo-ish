@@ -18,7 +18,7 @@
         meta_settings_combo {
             timeout-ms = <50>;
             key-positions = <16 17 18>;
-            bindings = <&sl SETTINGS>;
+            bindings = <&mo SETTINGS>;
         };
 
         meta_lock_combo {
