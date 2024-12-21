@@ -86,8 +86,13 @@
         };
 
         qwerty_2 {
-            status = "reserved";
-            label = "Yuiop";
+            bindings = <
+                  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+                  &kp Y           &kp U         &kp I         &kp O         &kp P
+                  &kp H           &kp J         &kp K         &kp L         &kp SEMI
+&kp N                      &kp M                &kp COMMA                       &kp DOT       &kp SLASH
+            >;
+            display-name = "Yuiop";
         };
 
         extra2 { status = "reserved"; };
