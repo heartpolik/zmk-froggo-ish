@@ -40,6 +40,26 @@
             key-positions = <0 15 19>;
             layers = <0>;
         };
+
+        layer_2 {
+            bindings = <&tog 2>;
+            key-positions = <15 19 1>;
+        };
+
+        layer_3 {
+            bindings = <&tog 3>;
+            key-positions = <15 19 2>;
+        };
+
+        layer_4 {
+            bindings = <&tog 4>;
+            key-positions = <15 19 3>;
+        };
+
+        layer_5 {
+            bindings = <&tog 5>;
+            key-positions = <15 19 4>;
+        };
     };
 
     keymap {
@@ -55,33 +75,32 @@
             >;
         };
 
-        gaming_layer {
-            display-name = "Qwerty";
+        qwerty_1 {
+            display-name = "Qwer";
             bindings = <
-         &kp F16           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
-         &kp F19           &kp Q         &kp W         &kp E         &kp R
-         &kp F20           &kp A         &kp S         &kp D         &kp F
-&kp F18  &kp LEFT_CONTROL                &kp F17                     &kp SPACE     &kp SPACE
+                  &kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
+                  &kp TAB         &kp Q         &kp W         &kp E         &kp R
+                  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F
+&kp LEFT_CONTROL  &kp LEFT_ALT                  &mo 2                       &kp F11       &kp SPACE
             >;
         };
 
-        extra1 {
+        qwerty_2 {
             status = "reserved";
+            label = "Yuiop";
         };
-        extra2 {
-            status = "reserved";
-        };
-        extra3 {
-            status = "reserved";
-        };
+
+        extra2 { status = "reserved"; };
+
+        extra3 { status = "reserved"; };
 
         settings_layer {
             display-name = "CFG";
             bindings = <
-             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-             &none         &none         &none         &none         &none
-             &kp P         &none         &sys_reset    &none         &studio_unlock
-&bootloader  &none                       &none                       &none           &bt BT_CLR
+             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
+             &none         &none         &none           &none         &none
+             &kp P         &none         &none           &none         &none
+&bootloader  &sys_reset                  &studio_unlock                &bt BT_CLR_ALL  &bt BT_CLR
             >;
         };
 
